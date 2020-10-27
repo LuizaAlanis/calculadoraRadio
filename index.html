@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Calculadora </title>
+        <script language="JavaScript">
+            function limpar()
+            {
+                document.getElementById("val1").focus();
+            }
+        </script>
+    </head>
+    <body>
+        <form method="post" action="calculadora.php">    
+
+                <div class="eyedio">
+
+                    <div class="animated animatedFadeInUp fadeInUp">
+                        <h2>Escolha uma opção</h2>
+                    </div>
+
+                    <div class="animated animatedFadeInUp fadeInUp">
+                        <h6>Digite o primeiro valor</h6>
+                        <p><input id="val1" name="txtval1" type="text" class="textbox"/></p>
+                    </div>
+                    
+                    <div class="animated animatedFadeInUp fadeInUp">
+                        <h6>Digite o segundo valor</h6>
+                        <p><input id="val2" name="txtval2" type="text" class="textbox"/></p>
+                    </div>
+
+                    <label class="eyedio__label" for="soma">
+                    <input class="eyedio__radio" type="radio" value="soma" name="op" id="soma" checked>
+                    <span class="eyedio__eye"></span>
+                    Soma
+                    </label>
+
+                    <label class="eyedio__label" for="sub">
+                    <input class="eyedio__radio" type="radio" value="sub" name="op" id="sub">
+                    <span class="eyedio__eye"></span>
+                    Subtração
+                    </label>
+
+                    <label class="eyedio__label" for="multi">
+                    <input class="eyedio__radio" type="radio" value="multi" name="op" id="multi">
+                    <span class="eyedio__eye"></span>
+                    Multiplicação
+                    </label>
+
+                    <label class="eyedio__label" for="div">
+                    <input class="eyedio__radio" type="radio" value="div" name="op" id="div" checked>
+                    <span class="eyedio__eye"></span>
+                    Divisão
+                    </label>
+
+                    </br>
+
+                    <div class="animated animatedFadeInUp fadeInUp">
+                        <input type="submit" value="Enviar" class="button"/>
+                        <input type="reset" value="Limpar" onClick="limpar()"  class="button"/>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
